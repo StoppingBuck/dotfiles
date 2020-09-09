@@ -1,5 +1,6 @@
 - defaults:
     link:
+      force: true
       glob: true
       relink: true
 
@@ -33,7 +34,7 @@
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
     #~/.zshrc: zshrc # No point as long as it is just vanilla oh-my-zsh
-- create:
+#- create:
     #- ~/.vim/undo-history
 
 - shell:
