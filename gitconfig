@@ -1,0 +1,5 @@
+[user]
+	email = madspeter@rommedahl.info
+	name = Mads Peter Rommedahl
+[pull]
+	rebase = false

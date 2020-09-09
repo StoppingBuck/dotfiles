@@ -1,0 +1,40 @@
+- defaults:
+    link:
+      glob: true
+      relink: true
+
+- clean: ['~']
+
+- link:
+    #~/.vim: vim
+    #~/.vimrc: vimrc
+    ~/.config/i3/config: # Not really used, but symlinking for good measure
+      create: true
+      path: i3_config
+    ~/.config/mpv/mpv.conf: 
+      create: true
+      path: mpv.conf
+    ~/.config/ncmpcpp/bindings:
+      create: true
+      path: ncmpcpp_bindings
+    ~/.config/ncmpcpp/config:
+      create: true
+      path: ncmpcpp_config
+    ~/.gnupg/gpg-agent.conf:
+      create: true
+      path: gpg-agent
+    ~/.i3/config:
+      create: true
+      path: i3_config
+    ~/.dmenurc: dmenurc
+    ~/.gitconfig: gitconfig
+    ~/.pam_environment: pam_environment
+    ~/.profile: profile
+    ~/.xinitrc: xinitrc
+    ~/.Xresources: Xresources
+    #~/.zshrc: zshrc # No point as long as it is just vanilla oh-my-zsh
+- create:
+    #- ~/.vim/undo-history
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
