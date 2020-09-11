@@ -182,9 +182,9 @@ bindsym $mod+Shift+8 move container to workspace $ws8
 # Open applications on specific workspaces
 assign [class="Brave"] $ws1
 assign [class="code-oss"] $ws4
+assign [class="rambox"] $ws5
 assign [class="Trello"] $ws5
 assign [class="todoist-nativefier-409272"] $ws6
-assign [class="rambox"] $ws7
 assign [class="Signal"] $ws7
 assign [class="Thunderbird"] $ws8
 
@@ -193,10 +193,10 @@ bindsym $mod+F5 exec terminal -e 'ncmpcpp'
 # Auto-start at boot
 exec protonmail-bridge --no-window
 exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/brave'
+exec --no-startup-id i3-msg 'workspace $ws5; exec /usr/bin/rambox'
 exec --no-startup-id i3-msg 'workspace $ws6; exec /usr/bin/todoist-nativefier'
-exec --no-startup-id i3-msg 'workspace $ws7; exec /usr/bin/rambox'
 exec --no-startup-id i3-msg 'workspace $ws7; exec /usr/bin/signal-desktop'
-#exec --no-startup-id i3-msg 'workspace $ws8; exec /usr/bin/thunderbird'
+exec --no-startup-id i3-msg 'workspace $ws8; exec /usr/bin/thunderbird'
 #exec --no-startup-id i3-msg 'workspace $ws8; exec /usr/bin/trello'
 
 # Open specific applications in floating mode
