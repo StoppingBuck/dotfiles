@@ -21,6 +21,21 @@
     ~/.config/ncmpcpp/config:
       create: true
       path: ncmpcpp_config
+    ~/.config/ranger/commands.py:
+      create: true
+      path: ranger/commands.py
+    ~/.config/ranger/devicons.py:
+      create: true
+      path: ranger/devicons.py
+    ~/.config/ranger/rc.conf:
+      create: true
+      path: ranger/rc.conf
+    ~/.config/ranger/rifle.conf:
+      create: true
+      path: ranger/rifle.conf
+    ~/.config/ranger/scope.sh:
+      create: true
+      path: ranger/scope.sh
     ~/.gnupg/gpg-agent.conf:
       create: true
       path: gpg-agent
