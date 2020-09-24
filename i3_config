@@ -7,6 +7,10 @@ set $mod Mod4
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
+# Set laptop resolution
+exec --no-startup-id xrandr --output eDP1 --mode 1920x1080
+exec --no-startup-id nitrogen --restore
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 default_border pixel 1
 default_floating_border normal
@@ -282,8 +286,7 @@ mode "resize" {
 }
 
 # Lock screen
-# MP: Not needed
-#bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
