@@ -1,5 +1,12 @@
 " vim-bootstrap 2020-10-13 13:50:59
 
+" Crap moved up here (MP)
+" Syntax highlight
+" Default highlight is better than polyglot
+let g:polyglot_disabled = ['python']
+let python_highlight_all = 1
+
+
 "*****************************************************************************
 "" Vim-Plug core
 "*****************************************************************************
@@ -533,12 +540,6 @@ let g:jedi#smart_auto_mappings = 0
 
 " vim-airline
 let g:airline#extensions#virtualenv#enabled = 1
-
-" Syntax highlight
-" Default highlight is better than polyglot
-let g:polyglot_disabled = ['python']
-let python_highlight_all = 1
-
 
 " typescript
 let g:yats_host_keyword = 1
