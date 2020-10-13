@@ -61,8 +61,8 @@ bindsym $mod+Ctrl+m exec pavucontrol
 # Start Applications
 bindsym $mod+Ctrl+b exec terminal -e 'bmenu'
 bindsym $mod+F2 exec brave
-bindsym $mod+F3 exec pcmanfm
-# bindsym $mod+F3 exec ranger
+#bindsym $mod+F3 exec pcmanfm
+bindsym $mod+F3 exec terminal -e 'ranger'
 bindsym $mod+Shift+F3 exec pcmanfm_pkexec
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
@@ -196,6 +196,7 @@ bindsym $mod+F5 exec terminal -e 'ncmpcpp'
 
 # Auto-start at boot
 exec protonmail-bridge --no-window
+exec pcloud
 exec --no-startup-id i3-msg 'workspace $ws1; exec /usr/bin/brave'
 exec --no-startup-id i3-msg 'workspace $ws5; exec /usr/bin/rambox'
 exec --no-startup-id i3-msg 'workspace $ws6; exec /usr/bin/todoist-nativefier'

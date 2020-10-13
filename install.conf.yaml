@@ -21,6 +21,9 @@
     ~/.config/ncmpcpp/config:
       create: true
       path: ncmpcpp_config
+    ~/.config/nvim/init.vim:
+      create: true
+      path: neovim/vimrc
     ~/.config/ranger/commands.py:
       create: true
       path: ranger/commands.py
