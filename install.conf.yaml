@@ -51,7 +51,7 @@
     ~/.profile: profile
     ~/.xinitrc: xinitrc
     ~/.Xresources: Xresources
-    #~/.zshrc: zshrc # No point as long as it is just vanilla oh-my-zsh
+    ~/.zshrc: zshrc
 #- create:
     #- ~/.vim/undo-history
 
