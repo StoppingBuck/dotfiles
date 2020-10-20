@@ -63,6 +63,7 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+# yay -S numlockx for Num Lock default to be turned on
 numlockx &
 
 exec $(get_session)
