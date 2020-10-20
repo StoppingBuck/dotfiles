@@ -63,4 +63,6 @@ get_session(){
 	echo "dbus-launch ${dbus_args[*]}"
 }
 
+numlockx &
+
 exec $(get_session)
